@@ -39,6 +39,37 @@ echo"<br/>";
 echo(min(45,8,5,44,0));
 echo"<br/>";
 
+// PHP OOP
+
+class Car{
+
+    public $name;
+    public $color;
+
+    function set_name($name){
+        $this->name = $name;
+    }
+
+    function get_name(){
+        return $this->name;
+    }
+
+    function set_color($color){
+        $this->color = $color;
+    }
+    function get_color(){
+        return $this->color;
+    }
+    
+}
+
+$bmw = new Car();
+$bmw->set_name("BMW");
+$bmw->set_color('Black');
+
+echo "Car Name: " .$bmw->get_name();
+echo "<br/>";
+echo "Car Color: ".$bmw->get_color();
 
 
 ?>
